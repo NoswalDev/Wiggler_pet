@@ -7,8 +7,8 @@ export default defineConfig({
 	// site: 'https://wiggler.pet', //site to pair with CNAME
 	// base: '/Wiggler_pet', //temporarily comment out to run on dev server
 	redirects: {
-		'/rise/rise/[...path]': '/rise/[...path]',
-		'/rise/images/[...path]': '/images/[...path]',
+		'/rise/rise/*': '/rise/*',
+		'/rise/images/*': '/images/*',
 	},
 	integrations: [
 		starlight({
