@@ -3,8 +3,8 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://noswaldev.github.io',
-	base: '/Wiggler_pet', //temporarily comment out to run on dev server
+	site: 'https://noswaldev.github.io/Wiggler_pet', //temporarily remove /wigg for hosting
+	base: '', //temporarily comment out to run on dev server
 	integrations: [
 		starlight({
 			title: 'MH Wigglis',
