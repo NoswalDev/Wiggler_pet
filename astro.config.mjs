@@ -25,10 +25,10 @@ export default defineConfig({
 				// },
 			],
 			disable404Route: true, //override default starlight 404
-			// customCss: [
-			// 	'./src/styles/Global.css',
-			// 	'./src/styles/Global_small.css',
-			// ],
+			customCss: [
+				'./src/styles/Global.css',
+				'./src/styles/Global_small.css',
+			],
 		}),
 	],
 });
