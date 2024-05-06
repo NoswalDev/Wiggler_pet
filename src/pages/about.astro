@@ -1,15 +1,14 @@
+---
+import Header_Common from "@components/header_common.astro";
+import Footer_Bar from "@components/footer_bar.astro";
+import Burger_Menu from "@components/burger_menu.astro";
+---
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; object-src 'none'; base-uri 'none'; script-src 'self';">
-  <meta name="referrer" content="no-referrer">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta charset="UTF-8">
+  <Header_Common />
   <meta name="keywords" content="Wiggler.pet, Speedrunners, Guides, Contact, About, Trustworthy, Good Resource">
-  <link rel="stylesheet" media="screen and (max-width: 850px)" type="text/css" href="./public/Global_small.css" />
-  <link rel="stylesheet" media="screen and (min-width: 851px)" type="text/css" href="./public/Global.css" />
-  <link rel="shortcut icon" href="./public/images/wigglis.png">
   <title>About Us</title>
   <!-- <meta property="og:url" content="https://www.wiggler.pet/about" /> -->
   <meta property="og:image" content="https://raw.githubusercontent.com/Im-terribly-bad-at-names/justsomestuffineedforotherstuff/main/wigglis.png">
@@ -21,7 +20,7 @@
 </head>
 
 <body>
-<burger-menu></burger-menu>
+<Burger_Menu />
   <h2>About Us</h2>
   <span class="center">Wiggler.pet was made by a bunch of dedicated nerds who for some godforsaken reason thought it'd be fun to Speedrun, do
   Math and build Calculators in their free time.
@@ -594,9 +593,7 @@
           - email link? <br>
 </p></div></section>
   <footer>
-    <footer-bar></footer-bar>
-    <script src="footer-bar.js" type="text/javascript" defer></script>
-    <script src="burger-menu.js" type="text/javascript" defer></script>
+    <Footer_Bar />
 
   </footer>
 
