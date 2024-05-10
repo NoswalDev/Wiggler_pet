@@ -3,9 +3,9 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://noswaldev.github.io', //temporarily remove /wigg for hosting
+	site: 'https://noswaldev.github.io/Wiggler_pet/', //temporarily remove /wigg for hosting
 	// site: 'https://wiggler.pet', //site to pair with CNAME
-	base: '/Wiggler_pet', //temporarily comment out to run on dev server
+	// base: '/Wiggler_pet', //temporarily comment out to run on dev server
 	integrations: [
 		starlight({
 			title: 'MH Wigglis',
@@ -25,10 +25,10 @@ export default defineConfig({
 				// },
 			],
 			disable404Route: true, //override default starlight 404
-			// customCss: [
-			// 	'./src/styles/global.css',
-			// 	'./src/styles/global_small.css',
-			// ],
+			customCss: [
+				'src/styles/global.css',
+				'src/styles/global_small.css',
+			],
 		}),
 	],
 });
