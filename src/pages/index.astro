@@ -1,0 +1,61 @@
+---
+import Header_Common from "@components/header_common.astro";
+import Footer_Bar from "@components/footer_bar.astro";
+import Burger_Menu from "@components/burger_menu.astro";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <Header_Common />
+    <meta
+      name="keywords"
+      content="Wiggler, Monster Hunter, Rise, Sunbreak, World, Iceborne, Guides, Prog, Meta, Endgame, How to, MH"
+    />
+
+    <title>Wiggler.pet</title>
+    <!-- <meta property="og:url" content="https://www.wiggler.pet" /> -->
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/Im-terribly-bad-at-names/justsomestuffineedforotherstuff/main/wigglis.png"
+    />
+    <meta
+      property="description"
+      content="Monster Hunter Guides, written and curated by Theorycrafters, Speedrunners and you!"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Wiggler.pet" />
+    <meta
+      property="og:description"
+      content="Monster Hunter Guides, written and curated by Theorycrafters, Speedrunners and you!"
+    />
+    <meta name="robots" content="max-snippet:-1, max-image-preview:large" />
+  </head>
+
+  <body class="RiseMeme home">
+    <h2>Guides and more</h2>
+    <h4>Click a game below or in the Map</h4>
+
+    <div class="IndexLogos">
+      <a href="wilds" class="wilds"></a>
+      <img class="IndexImg" src="/src/assets/logos/wilds_logo.webp" />
+    </div>
+    <a href="rise" class="rise">
+      <img class="IndexImg" src="/src/assets/logos/rise_logo.webp" />
+    </a>
+    <a href="world" class="world">
+      <img class="IndexImg" src="/src/assets/logos/world_logo.webp" />
+    </a>
+    <a href="other">
+      <img class="IndexImg" src="/src/assets/logos/other_guides_logo.webp" />
+    </a>
+    <br />
+
+    <p>You can also read more about us, just follow the button below!</p>
+
+    <footer>
+      <Footer_Bar />
+      <Burger_Menu />
+    </footer>
+  </body>
+</html>
