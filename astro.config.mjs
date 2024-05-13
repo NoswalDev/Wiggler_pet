@@ -4,8 +4,8 @@ import starlight from '@astrojs/starlight';
 // https://astro.build/config
 export default defineConfig({
 	// site: 'https://wiggler.pet', //site to pair with CNAME
-	site: 'https://noswaldev.github.io', //temporarily remove /wigg for hosting
-	base: '/Wiggler_pet', //temporarily comment out to run on dev server
+	site: 'https://noswaldev.github.io/Wiggler_pet', //temporarily remove /wigg for hosting
+	// base: '/Wiggler_pet', //temporarily comment out to run on dev server
 	integrations: [
 		starlight({
 			title: 'MH Wigglis',
