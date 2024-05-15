@@ -5,7 +5,7 @@ font-family: "Didact Gothic"; /*taken from here - https://github.com/ossobuffo/d
   font-family: "Didact Gothic";
   font-style: normal;
   font-weight: 400;
-  src: url(/public/fonts/didact_gothic.woff2) format("woff2");
+  src: url(/Wiggler_pet/fonts/didact_gothic.woff2) format("woff2");
 }
 body {
   scrollbar-width: none;
