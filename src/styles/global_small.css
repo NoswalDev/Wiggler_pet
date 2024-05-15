@@ -734,12 +734,12 @@ input[id="showprog"]:checked ~ .radiotext3 {
   width: 70vw;
 }
 .RiseMeme {
-  background-image: url(/src/assets/headers/AmazonPrimordialDarkVest.webp);
+  background-image: url(/Wiggler_pet/assets/headers/AmazonPrimordialDarkVest.webp);
   background-repeat: no-repeat;
   background-size: 100vw;
 } /*bg position 50% -1%*/
 .WorldMeme {
-  background-image: url(/src/assets/headers/slap_roof_of_fatty.webp);
+  background-image: url(/Wiggler_pet/assets/headers/slap_roof_of_fatty.webp);
   background-repeat: no-repeat;
   background-size: 100vw;
 } /*bg position 50% 2%*/
