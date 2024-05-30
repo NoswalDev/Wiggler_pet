@@ -1,0 +1,20 @@
+---
+
+interface Props {
+  game: string;
+  guide: string;
+  guide_label: string;
+  weaps: [string];
+
+}
+
+const { game, guide, guide_label, weaps } = Astro.props;
+
+---
+
+{weaps.map((weap) => {
+    <input type="radio" class="radiobutton" name="Level2RadioButton" id="show${guide}" />
+    <label for="show${guide}" class="radiotext2" >
+      {guide_label}
+    </label>
+})}

@@ -6,6 +6,9 @@ export default defineConfig({
 	// site: 'https://wiggler.pet', //site to pair with CNAME
 	site: 'https://noswaldev.github.io', //temporarily remove /wigg for hosting
 	base: 'Wiggler_pet', //temporarily comment out to run on dev server
+	redirects:{
+		'/Wiggler_pet/index':'/Wiggler_pet/'
+	},
 	integrations: [
 		starlight({
 			title: 'MH Wigglis',

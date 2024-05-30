@@ -835,7 +835,7 @@ lite-youtube > .lty-playbtn {
   width: 100%;
   height: 100%;
   background: no-repeat center/68px 48px;
-  background-image: url("src/assets/icons/yt_button.webp");
+  background-image: url("/Wiggler_pet/assets/icons/yt_button.webp");
   position: absolute;
   cursor: pointer;
   z-index: 1;
@@ -1044,7 +1044,7 @@ input[id="WildsHBG"]:checked ~ #showWildsHBG {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 50% 50%;
-  background-image: url(src/assets/weap_icons/greatsword.webp);
+  background-image: url(/Wiggler_pet/assets/weap_icons/greatsword.webp);
 }
 #showWorldLS,
 #showRiseLS,
@@ -1052,7 +1052,7 @@ input[id="WildsHBG"]:checked ~ #showWildsHBG {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 50% 50%;
-  background-image: url(src/assets/weap_icons/longsword.webp);
+  background-image: url(/Wiggler_pet/assets/weap_icons/longsword.webp);
 }
 #showWorldSnS,
 #showRiseSnS,
@@ -1060,7 +1060,7 @@ input[id="WildsHBG"]:checked ~ #showWildsHBG {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 50% 50%;
-  background-image: url(src/assets/weap_icons/sword_and_shield.webp);
+  background-image: url(/Wiggler_pet/assets/weap_icons/sword_and_shield.webp);
 }
 #showWorldDB,
 #showRiseDB,
@@ -1068,7 +1068,7 @@ input[id="WildsHBG"]:checked ~ #showWildsHBG {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 50% 50%;
-  background-image: url(src/assets/weap_icons/dual_blades.webp);
+  background-image: url(/Wiggler_pet/assets/weap_icons/dual_blades.webp);
 }
 #showWorldHammer,
 #showRiseHammer,
@@ -1076,7 +1076,7 @@ input[id="WildsHBG"]:checked ~ #showWildsHBG {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 50% 50%;
-  background-image: url(src/assets/weap_icons/hammer.webp);
+  background-image: url(/Wiggler_pet/assets/weap_icons/hammer.webp);
 }
 #showWorldHorn,
 #showRiseHorn,
@@ -1084,7 +1084,7 @@ input[id="WildsHBG"]:checked ~ #showWildsHBG {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 50% 50%;
-  background-image: url(src/assets/weap_icons/hunting_horn.webp);
+  background-image: url(/Wiggler_pet/assets/weap_icons/hunting_horn.webp);
 }
 #showWorldLance,
 #showRiseLance,
@@ -1092,7 +1092,7 @@ input[id="WildsHBG"]:checked ~ #showWildsHBG {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 50% 50%;
-  background-image: url(src/assets/weap_icons/lance.webp);
+  background-image: url(/Wiggler_pet/assets/weap_icons/lance.webp);
 }
 #showWorldGunlance,
 #showRiseGunlance,
@@ -1100,7 +1100,7 @@ input[id="WildsHBG"]:checked ~ #showWildsHBG {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 50% 50%;
-  background-image: url(src/assets/weap_icons/gunlance.webp);
+  background-image: url(/Wiggler_pet/assets/weap_icons/gunlance.webp);
 }
 #showWorldSwaxe,
 #showRiseSwaxe,
@@ -1108,7 +1108,7 @@ input[id="WildsHBG"]:checked ~ #showWildsHBG {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 50% 50%;
-  background-image: url(src/assets/weap_icons/switch_axe.webp);
+  background-image: url(/Wiggler_pet/assets/weap_icons/switch_axe.webp);
 }
 #showWorldCB,
 #showRiseCB,
@@ -1116,7 +1116,7 @@ input[id="WildsHBG"]:checked ~ #showWildsHBG {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 50% 50%;
-  background-image: url(src/assets/weap_icons/charge_blade.webp);
+  background-image: url(/Wiggler_pet/assets/weap_icons/charge_blade.webp);
 }
 #showWorldGlaive,
 #showRiseGlaive,
@@ -1124,7 +1124,7 @@ input[id="WildsHBG"]:checked ~ #showWildsHBG {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 50% 50%;
-  background-image: url(src/assets/weap_icons/insect_glaive.webp);
+  background-image: url(/Wiggler_pet/assets/weap_icons/insect_glaive.webp);
 }
 #showWorldBow,
 #showRiseBow,
@@ -1132,7 +1132,7 @@ input[id="WildsHBG"]:checked ~ #showWildsHBG {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 50% 50%;
-  background-image: url(src/assets/weap_icons/bow.webp);
+  background-image: url(/Wiggler_pet/assets/weap_icons/bow.webp);
 }
 #showWorldLBG,
 #showRiseLBG,
@@ -1140,7 +1140,7 @@ input[id="WildsHBG"]:checked ~ #showWildsHBG {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 50% 50%;
-  background-image: url(src/assets/weap_icons/light_bowgun.webp);
+  background-image: url(/Wiggler_pet/assets/weap_icons/light_bowgun.webp);
 }
 #showWorldHBG,
 #showRiseHBG,
@@ -1148,7 +1148,7 @@ input[id="WildsHBG"]:checked ~ #showWildsHBG {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 50% 50%;
-  background-image: url(src/assets/weap_icons/heavy_bowgun.webp);
+  background-image: url(/Wiggler_pet/assets/weap_icons/heavy_bowgun.webp);
 }
 .CollSidebar {
   text-align: center;

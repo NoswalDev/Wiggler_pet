@@ -1,4 +1,7 @@
-class Burgermenu extends HTMLElement{constructor(){super();this.innerHTML=`<div class="sidebar"><input id="sidebar" class="toggle" type="checkbox" checked><label for="sidebar"
+class Burgermenu extends HTMLElement {
+  constructor() {
+    super();
+    this.innerHTML = `<div class="sidebar"><input id="sidebar" class="toggle" type="checkbox" checked><label for="sidebar"
 class="sidebarbutton"><img src="images/map.webp" class="burger" alt="Open Burger Menu"></label>
 <div class="collapsible-contentSidebar">
 <div class="collapsible-content-inside"><label for="sidebar">
@@ -317,4 +320,9 @@ class="sidebarbutton"><img src="images/map.webp" class="burger" alt="Open Burger
         class="Side_Logo" alt="https://www.wiggler.pet"></a>
 </div>
 </div>
-</div>`}}if('customElements' in window){customElements.define('burger-menu',Burgermenu)}
+</div>`;
+  }
+}
+if ("customElements" in window) {
+  customElements.define("burger-menu", Burgermenu);
+}

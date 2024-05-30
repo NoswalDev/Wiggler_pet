@@ -1,0 +1,88 @@
+---
+const Game = "rise";
+const Guide = "endgame";
+// const Weaps = ["greatsword","longsword","sword_and_shield","dual_blades","hammer","hunting_horn","lance","gunlance","switch_axe","charge_blade","insect_glaive","light_bowgun","heavy_bowgun","bow"];
+
+import type { ImageMetadata } from 'astro';
+import { Image } from 'astro:assets';
+
+interface Props {
+    name: string;
+    game: string;
+    guide: string;
+    image_path: string;
+    alt_text: string;
+    link: string;
+}
+const { image_path, alt_text, link } = Astro.props;
+const images = import.meta.glob<{ default: ImageMetadata }>('@assets/weap_icons/*.{webp,png}');
+if (!images[image_path]) throw new Error(`"${image_path}" does not exist in glob: "src/assets/weap_icons/*.{webp,png}"`);
+
+import greatsword from "@assets/weap_icons/greatsword.webp";
+import longsword from "@assets/weap_icons/longsword.webp";
+import sword_and_shield from "@assets/weap_icons/sword_and_shield.webp";
+import dual_blades from "@assets/weap_icons/dual_blades.webp";
+import hammer from "@assets/weap_icons/hammer.webp";
+import hunting_horn from "@assets/weap_icons/hunting_horn.webp";
+import lance from "@assets/weap_icons/lance.webp";
+import gunlance from "@assets/weap_icons/gunlance.webp";
+import switch_axe from "@assets/weap_icons/switch_axe.webp";
+import charge_blade from "@assets/weap_icons/charge_blade.webp";
+import insect_glaive from "@assets/weap_icons/insect_glaive.webp";
+import light_bowgun from "@assets/weap_icons/light_bowgun.webp";
+import heavy_bowgun from "@assets/weap_icons/heavy_bowgun.webp";
+import bow from "@assets/weap_icons/bow.webp";
+
+---
+
+
+<div class="RadioContainer">
+    <input type="radio" class="radiobutton" name="Level2RadioButton" id="showendgame" /><label for="showendgame"
+      class="radiotext1">Endgame Sets</label>
+
+    <div id="endgame">
+      <div>
+        <a href={link}>
+            <Image src={images[image_path]()} alt={alt_text} class="inlineimg" />
+        </a>
+      </div>
+    </div>
+
+    <!-- <div id="guide">
+      <p>
+        <a href="rise/guide/greatsword"><img src="/src/assets/weap_icons/greatsword.webp" class="inlineimg" /></a>
+        <a href="rise/guide/longsword"><img src="/src/assets/weap_icons/longsword.webp" class="inlineimg" /></a>
+        <a href="rise/guide/sword_and_shield"><img src="/src/assets/weap_icons/sword_and_shield.webp" class="inlineimg" /></a>
+        <a href="rise/guide/dual_blades"><img src="/src/assets/weap_icons/dual_blades.webp" class="inlineimg" /></a>
+        <a href="rise/guide/hammer"><img src="/src/assets/weap_icons/hammer.webp" class="inlineimg" /></a>
+        <a href="rise/guide/hunting_horn"><img src="/src/assets/weap_icons/hunting_horn.webp" class="inlineimg" /></a>
+        <a href="rise/guide/lance"><img src="/src/assets/weap_icons/lance.webp" class="inlineimg" /></a>
+        <a href="rise/guide/gunlance"><img src="/src/assets/weap_icons/gunlance.webp" class="inlineimg" /></a>
+        <a href="rise/guide/switch_axe"><img src="/src/assets/weap_icons/switch_axe.webp" class="inlineimg" /></a>
+        <a href="rise/guide/charge_blade"><img src="/src/assets/weap_icons/charge_blade.webp" class="inlineimg" /></a>
+        <a href="rise/guide/insect_glaive"><img src="/src/assets/weap_icons/insect_glaive.webp" class="inlineimg" /></a>
+        <a href="rise/guide/light_bowgun"><img src="/src/assets/weap_icons/light_bowgun.webp" class="inlineimg" /></a>
+        <a href="rise/guide/heavy_bowgun"><img src="/src/assets/weap_icons/heavy_bowgun.webp" class="inlineimg" /></a>
+        <a href="rise/guide/bow"><img src="/src/assets/weap_icons/bow.webp" class="inlineimg" /></a>
+      </p>
+    </div>
+
+    <div id="prog">
+      <p>
+        <a href="rise/progression/greatsword"><img src="/src/assets/weap_icons/greatsword.webp" class="inlineimg" /></a>
+        <a href="rise/progression/longsword"><img src="/src/assets/weap_icons/longsword.webp" class="inlineimg" /></a>
+        <a href="rise/progression/sword_and_shield"><img src="/src/assets/weap_icons/sword_and_shield.webp" class="inlineimg" /></a>
+        <a href="rise/progression/dual_blades"><img src="/src/assets/weap_icons/dual_blades.webp" class="inlineimg" /></a>
+        <a href="rise/progression/hammer"><img src="/src/assets/weap_icons/hammer.webp" class="inlineimg" /></a>
+        <a href="rise/progression/hunting_horn"><img src="/src/assets/weap_icons/hunting_horn.webp" class="inlineimg" /></a>
+        <a href="rise/progression/lance"><img src="/src/assets/weap_icons/lance.webp" class="inlineimg" /></a>
+        <a href="rise/progression/gunlance"><img src="/src/assets/weap_icons/gunlance.webp" class="inlineimg" /></a>
+        <a href="rise/progression/switch_axe"><img src="/src/assets/weap_icons/switch_axe.webp" class="inlineimg" /></a>
+        <a href="rise/progression/charge_blade"><img src="/src/assets/weap_icons/charge_blade.webp" class="inlineimg" /></a>
+        <a href="rise/progression/insect_glaive"><img src="/src/assets/weap_icons/insect_glaive.webp" class="inlineimg" /></a>
+        <a href="rise/progression/light_bowgun"><img src="/src/assets/weap_icons/light_bowgun.webp" class="inlineimg" /></a>
+        <a href="rise/progression/heavy_bowgun"><img src="/src/assets/weap_icons/heavy_bowgun.webp" class="inlineimg" /></a>
+        <a href="rise/progression/bow"><img src="/src/assets/weap_icons/bow.webp" class="inlineimg" /></a>
+      </p>
+    </div> -->
+  </div>

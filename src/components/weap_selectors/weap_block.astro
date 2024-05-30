@@ -1,0 +1,18 @@
+---
+import Weap_Link from '@components/weap_selectors/weap_link.astro';
+
+interface Props {
+  game: string;
+  guide: string;
+  weaps: [string];
+}
+
+const { game, guide, weaps } = Astro.props;
+
+---
+
+<div id={guide}>
+    {weaps.map((weap) => {
+        <Weap_Link game={game} guide={guide} weap={weap} />
+    })}
+</div>

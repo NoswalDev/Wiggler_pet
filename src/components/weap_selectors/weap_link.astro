@@ -1,0 +1,19 @@
+---
+import { Image } from "astro:assets";
+
+interface Props {
+  game: string;
+  guide: string;
+  weap: string;
+}
+
+const { game, guide, weap } = Astro.props;
+
+// const weap_img_path = '@assets/weap_icons/${weap}.webp';
+
+import weap_img from "@assets/weap_icons/${weap}.webp";
+---
+
+<a href="${game}/${guide}/${weap}">
+  <Image src={weap_img} alt={weap} class="BurgerWeaponTableImg center" />
+</a>

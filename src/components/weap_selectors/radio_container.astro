@@ -1,0 +1,31 @@
+---
+import Guide_Tab from '@components/weap_selectors/guide_tab.astro';
+
+interface Props {
+  game: string;
+  guides: Map<string,string>;
+  weaps: [string];
+}
+
+const { game, guides, weaps } = Astro.props;
+
+---
+
+<div class="RadioContainer">
+    {guides.map((guide) => {
+        <Guide_Tab game={game} guide={guide} weaps={weaps} />
+    })}
+  
+    <input
+    type="radio"
+    class="radiobutton"
+    name="Level2RadioButton"
+    id="showendgame"
+  />
+  <label for="showendgame" class="radiotext1">
+    Endgame Sets
+  </label>
+
+  <div id="endgame">
+  </div>
+</div>
