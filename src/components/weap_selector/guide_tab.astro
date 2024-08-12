@@ -1,0 +1,17 @@
+---
+
+interface Props {
+  game: string;
+  guide: string;
+  weaps: [string];
+
+}
+
+const { game, guide, weaps } = Astro.props;
+
+---
+
+<input type="radio" class="radiobutton" name="Level2RadioButton" id="show${guide}" />
+<label for="show${guide}" class="radiotext2" >
+  
+</label>

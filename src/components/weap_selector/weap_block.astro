@@ -1,0 +1,24 @@
+---
+import Weap_Icon from '@components/weap_selector/weap_icon_imp.astro';
+
+import { Image } from 'astro:assets';
+import { isAssertsKeyword } from 'typescript';
+
+interface Props {
+  game: string;
+  guide: string;
+  weaps: string[];
+}
+
+const { game, guide, weaps } = Astro.props;
+var weap_routes = new Map(weaps.map((weap) => [weap, '@assets/weap_icons/'+weap+'.webp']));
+
+---
+
+<div id={guide}>
+    {weaps.map((weap) => {
+      <a href={weapguidelink}>
+        <Weap_Icon weapName={weap} weapImgPath={} />
+      </a>
+    })}
+</div>

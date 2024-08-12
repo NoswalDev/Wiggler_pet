@@ -1,0 +1,12 @@
+---
+import Weap_Imp from '@components/weap_selector/weap_icon_imp.astro';
+import { Image } from 'astro:assets';
+
+interface Props {
+  game: string;
+  guide: string;
+  weapName: string;
+}
+
+const { game, guide, weapName } = Astro.props;
+---

@@ -5,7 +5,9 @@ import Burger_Menu from "@components/burger_menu.astro";
 
 import Patchnotes_Rise from "@components/patchnotes/patchnotes_rise.astro";
 
-import Radio_Container from "@components/radio_container.astro";
+import Weap_Block from "@components/weap_selector/weap_block.astro";
+
+const weapons_list = ["greatsword", "longsword", "sword_and_shield", "dual_blades", "hammer", "hunting_horn", "lance", "gunlance", "switch_axe", "charge_blade", "insect_glaive", "light_bowgun", "heavy_bowgun", "bow" ];
 ---
 
 <!DOCTYPE html>
@@ -31,11 +33,17 @@ import Radio_Container from "@components/radio_container.astro";
 <body class="RiseMeme">
   <Burger_Menu />
   <h2>Monster Hunter Rise Sunbreak</h2>
-  <Radio_Container
-    image_path="/src/assets/weap_icons/greatsword.webp"
-    alt_text="GS"
-    link="Wiggler_pet/rise/endgame/greatsword"
-  />
+  <div class="RadioContainer">
+    <input type="radio" class="radiobutton" name="Level2RadioButton" id="showendgame" /><label for="showendgame"
+      class="radiotext1">Endgame Sets</label>
+    <input type="radio" class="radiobutton" name="Level2RadioButton" id="showguide" checked /><label for="showguide"
+      class="radiotext2" >How to play...</label>
+    <input type="radio" class="radiobutton" name="Level2RadioButton" id="showprog" /><label for="showprog"
+      class="radiotext3">Progression Sets</label><br />
+    <Weap_Block game="rise" guide="endgame" weaps={weapons_list} />
+    <Weap_Block game="rise" guide="guide" weaps={weapons_list} />
+    <Weap_Block game="rise" guide="progression" weaps={weapons_list} />
+  </div>
 
   <h2>Patchnotes</h2>
   <Patchnotes_Rise />
